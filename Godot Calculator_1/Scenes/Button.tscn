@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Sprites/Button.png" type="Texture" id=1]
+
+[node name="Button" type="TextureButton"]
+margin_right = 16.0
+margin_bottom = 16.0
+rect_scale = Vector2( 4, 4 )
+texture_normal = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}

@@ -1,0 +1,335 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Scenes/Button.tscn" type="PackedScene" id=1]
+[ext_resource path="res://theboldfont.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://Sprites/Background.png" type="Texture" id=3]
+[ext_resource path="res://Scripts/Button.gd" type="Script" id=4]
+[ext_resource path="res://Button.ogg" type="AudioStream" id=5]
+
+[sub_resource type="DynamicFont" id=1]
+size = 52
+font_data = ExtResource( 2 )
+
+[node name="Calculator" type="Node2D"]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Button" type="Node2D" parent="."]
+script = ExtResource( 4 )
+
+[node name="Button0" parent="Button" instance=ExtResource( 1 )]
+margin_left = 448.0
+margin_top = 448.0
+margin_right = 464.0
+margin_bottom = 464.0
+
+[node name="Label0" type="Label" parent="Button/Button0"]
+margin_right = 16.0
+margin_bottom = 16.0
+text = "0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button1" parent="Button" instance=ExtResource( 1 )]
+margin_left = 352.0
+margin_top = 352.0
+margin_right = 368.0
+margin_bottom = 368.0
+
+[node name="Label1" type="Label" parent="Button/Button1"]
+margin_right = 16.0
+margin_bottom = 16.0
+text = "1"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button2" parent="Button" instance=ExtResource( 1 )]
+margin_left = 448.0
+margin_top = 352.0
+margin_right = 464.0
+margin_bottom = 368.0
+
+[node name="Label2" type="Label" parent="Button/Button2"]
+margin_right = 16.0
+margin_bottom = 16.0
+text = "2"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button3" parent="Button" instance=ExtResource( 1 )]
+margin_left = 544.0
+margin_top = 352.0
+margin_right = 560.0
+margin_bottom = 368.0
+
+[node name="Label3" type="Label" parent="Button/Button3"]
+margin_right = 16.0
+margin_bottom = 16.0
+text = "3"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button4" parent="Button" instance=ExtResource( 1 )]
+margin_left = 352.0
+margin_top = 256.0
+margin_right = 368.0
+margin_bottom = 272.0
+
+[node name="Label4" type="Label" parent="Button/Button4"]
+margin_right = 16.0
+margin_bottom = 16.0
+text = "4"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button5" parent="Button" instance=ExtResource( 1 )]
+margin_left = 448.0
+margin_top = 256.0
+margin_right = 464.0
+margin_bottom = 272.0
+
+[node name="Label5" type="Label" parent="Button/Button5"]
+margin_right = 16.0
+margin_bottom = 16.0
+text = "5"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button6" parent="Button" instance=ExtResource( 1 )]
+margin_left = 544.0
+margin_top = 256.0
+margin_right = 560.0
+margin_bottom = 272.0
+
+[node name="Label6" type="Label" parent="Button/Button6"]
+margin_right = 16.0
+margin_bottom = 16.0
+text = "6"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button7" parent="Button" instance=ExtResource( 1 )]
+margin_left = 352.0
+margin_top = 160.0
+margin_right = 368.0
+margin_bottom = 176.0
+
+[node name="Label7" type="Label" parent="Button/Button7"]
+margin_right = 16.0
+margin_bottom = 16.0
+text = "7"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button8" parent="Button" instance=ExtResource( 1 )]
+margin_left = 448.0
+margin_top = 160.0
+margin_right = 464.0
+margin_bottom = 176.0
+
+[node name="Label8" type="Label" parent="Button/Button8"]
+margin_right = 16.0
+margin_bottom = 16.0
+text = "8"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button9" parent="Button" instance=ExtResource( 1 )]
+margin_left = 544.0
+margin_top = 160.0
+margin_right = 560.0
+margin_bottom = 176.0
+
+[node name="Label9" type="Label" parent="Button/Button9"]
+margin_right = 16.0
+margin_bottom = 16.0
+text = "9"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ButtonDec" parent="Button" instance=ExtResource( 1 )]
+margin_left = 352.0
+margin_top = 448.0
+margin_right = 368.0
+margin_bottom = 464.0
+
+[node name="LabelDec" type="Label" parent="Button/ButtonDec"]
+margin_right = 16.0
+margin_bottom = 16.0
+text = "."
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ButtonAdd" parent="Button" instance=ExtResource( 1 )]
+margin_left = 640.0
+margin_top = 448.0
+margin_right = 656.0
+margin_bottom = 464.0
+
+[node name="LabelAdd" type="Label" parent="Button/ButtonAdd"]
+margin_right = 16.0
+margin_bottom = 16.0
+text = "+"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ButtonSub" parent="Button" instance=ExtResource( 1 )]
+margin_left = 640.0
+margin_top = 352.0
+margin_right = 656.0
+margin_bottom = 368.0
+
+[node name="LabelSub" type="Label" parent="Button/ButtonSub"]
+margin_right = 16.0
+margin_bottom = 16.0
+text = "-"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ButtonMul" parent="Button" instance=ExtResource( 1 )]
+margin_left = 640.0
+margin_top = 256.0
+margin_right = 656.0
+margin_bottom = 272.0
+
+[node name="LabelMul" type="Label" parent="Button/ButtonMul"]
+margin_right = 16.0
+margin_bottom = 16.0
+text = "x"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ButtonDiv" parent="Button" instance=ExtResource( 1 )]
+margin_left = 640.0
+margin_top = 160.0
+margin_right = 656.0
+margin_bottom = 176.0
+
+[node name="LabelDiv" type="Label" parent="Button/ButtonDiv"]
+margin_right = 16.0
+margin_bottom = 16.0
+text = "/"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ButtonEqual" parent="Button" instance=ExtResource( 1 )]
+margin_left = 544.0
+margin_top = 448.0
+margin_right = 560.0
+margin_bottom = 464.0
+
+[node name="LabelEqual" type="Label" parent="Button/ButtonEqual"]
+margin_right = 16.0
+margin_bottom = 16.0
+text = "="
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ButtonClear" parent="Button" instance=ExtResource( 1 )]
+margin_left = 736.0
+margin_top = 288.0
+margin_right = 752.0
+margin_bottom = 304.0
+
+[node name="LabelClear" type="Label" parent="Button/ButtonClear"]
+margin_right = 16.0
+margin_bottom = 16.0
+text = "C"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="Button"]
+margin_left = 352.0
+margin_top = 64.0
+margin_right = 704.0
+margin_bottom = 128.0
+texture = ExtResource( 3 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LabelAns" type="Label" parent="Button/TextureRect"]
+margin_top = 8.0
+margin_right = 352.0
+margin_bottom = 72.0
+custom_fonts/font = SubResource( 1 )
+text = "0"
+align = 2
+valign = 1
+clip_text = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Button"]
+stream = ExtResource( 5 )
+[connection signal="pressed" from="Button/Button0" to="Button" method="_on_Button0_pressed"]
+[connection signal="pressed" from="Button/Button1" to="Button" method="_on_Button1_pressed"]
+[connection signal="pressed" from="Button/Button2" to="Button" method="_on_Button2_pressed"]
+[connection signal="pressed" from="Button/Button3" to="Button" method="_on_Button3_pressed"]
+[connection signal="pressed" from="Button/Button4" to="Button" method="_on_Button4_pressed"]
+[connection signal="pressed" from="Button/Button5" to="Button" method="_on_Button5_pressed"]
+[connection signal="pressed" from="Button/Button6" to="Button" method="_on_Button6_pressed"]
+[connection signal="pressed" from="Button/Button7" to="Button" method="_on_Button7_pressed"]
+[connection signal="pressed" from="Button/Button8" to="Button" method="_on_Button8_pressed"]
+[connection signal="pressed" from="Button/Button9" to="Button" method="_on_Button9_pressed"]
+[connection signal="pressed" from="Button/ButtonDec" to="Button" method="_on_ButtonDec_pressed"]
+[connection signal="pressed" from="Button/ButtonAdd" to="Button" method="_on_ButtonAdd_pressed"]
+[connection signal="pressed" from="Button/ButtonSub" to="Button" method="_on_ButtonSub_pressed"]
+[connection signal="pressed" from="Button/ButtonMul" to="Button" method="_on_ButtonMul_pressed"]
+[connection signal="pressed" from="Button/ButtonDiv" to="Button" method="_on_ButtonDiv_pressed"]
+[connection signal="pressed" from="Button/ButtonEqual" to="Button" method="_on_ButtonEqual_pressed"]
+[connection signal="pressed" from="Button/ButtonClear" to="Button" method="_on_ButtonClear_pressed"]
